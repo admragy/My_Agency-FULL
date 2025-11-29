@@ -1,9 +1,7 @@
-// Path: lib/supabase.ts
 import { createClient } from '@supabase/supabase-js';
 
-// NEXT_PUBLIC_SUPABASE_URL و NEXT_PUBLIC_SUPABASE_ANON_KEY 
-// هيتم إضافتهم في Vercel
-const url = process.env.NEXT_PUBLIC_SUPABASE_URL!;
-const key = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!;
+// حط الرابط والمفتاح بتوعك هنا مباشرة بين علامات التنصيص ""
+const url = "https://yhkpqivmgeqoiehrziog.supabase.co";
+const key = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9";
 
 export const supabase = createClient(url, key);
